@@ -1,0 +1,142 @@
+ /*======= basic setup======= */
+ 
+ 
+ *{
+    margin:0;
+    padding: 0 ;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: #f2f2f2;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/*======= Nav bar======= */
+
+
+nav{
+    background: #2C353D;
+
+}
+
+nav:after{
+ content: '';
+ clear: both;
+ display: table;
+}
+nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+   
+}
+
+nav ul {
+   float: right;
+   list-style: none;  
+   margin-right: 40px;
+   position: relative;
+
+}
+
+nav ul li {
+   background: #2C353D;
+   float: left;
+   display: inline-block;
+   margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: rgba(100, 58, 121, 0) ;
+    box-shadow: 1px 2px 2px rgb(49, 47, 47);
+
+
+}
+
+
+
+/*======= Dropdown Nav bar======= */
+
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top,.2s;
+    -webkit-transition: top,.2s;
+    -moz-transition: top,.2s;
+    -ms-transition: top,.2s;
+    -o-transition: top,.2s;
+}
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    top: 70px;
+
+    
+}
+
+nav ul ul li {
+    position: relative;
+    margin-top: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    
+}
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul li a {
+    color: #e6dcdc;
+    box-shadow: none;
+}
+
+nav ul ul li a:hover {
+    color : #7F4167;
+}
+
+
+
+
+.fa-plus {
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.show, .icon, input {
+    display: none;
+}
+
+
+
+
+/* STICKY NAVIGATION */
+
+.sticky {
+	position: fixed;
+	background: #2C353D;
+	width: 100%;
+	top: 0;
+	border-bottom: .1rem solid rgba(255, 255, 255, 0.6);
+	z-index: 9999;
+	
+}
+
+
+
+
+

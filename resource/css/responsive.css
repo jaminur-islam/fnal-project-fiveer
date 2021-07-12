@@ -1,0 +1,117 @@
+/* 1200px */
+
+@media only screen and (max-width: 1200px) {
+    .row {
+        margin: 0 15px;
+    }
+}
+
+
+
+
+
+ /*======= Responsive all device ======= */
+/* 960px */
+    
+
+
+@media all and (max-width: 960px) {
+    
+
+    nav ul {
+        margin-right: 0;
+        float: left;
+        
+    }
+
+    nav .logo {
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li, nav ul ul li {
+        display: block;
+        width: 100%;
+
+    }
+   nav ul ul {
+       top:70px;
+       position: static;
+       border-top: none;
+       display: none;
+       float:none;
+       opacity: 1;
+       visibility: visible ;
+       
+
+    }
+
+   
+
+    .show {
+        display: block;
+        color: rgb(216, 204, 204);
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover {
+        color: cyan;
+    }
+
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+   
+    nav ul li a {
+        box-shadow: none;
+        font-size: 20px;
+    }
+
+    nav ul li  {
+        border-bottom: 1px solid white;
+	
+    }
+
+    nav ul ul li a {
+        border-bottom:  none;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+        color:#7F4167
+
+    }
+
+    nav ul ul li {
+        border: none;
+    }
+
+
+    .show +a, ul {
+        display: none;
+	
+		
+    }
+    [id^=btn]:checked + ul {
+    transition-property: display;
+    transition-duration: 2s;
+    
+}
+
+    [id^=btn]:checked + ul {
+        display: block;
+        width: 100%;
+      
+        
+
+}
+
+
+
+
